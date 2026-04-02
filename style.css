@@ -7,25 +7,32 @@
     --green:#4a7c59;
     --brickred: #cc5b19;
     --white: #ffffff;
-    --shadow:0 4px 20px m,,,,,km,rgba(253, 136, 26, 0.12);
-    margin: 0;
-    padding: 4px;
-    box-sizing: border-box;
+    --shadow:0 4px 20px,rgba(253, 136, 26, 0.12);
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: F9F8F8;
+    font-family: "Franklin Gothic Meduim","Arial Narrow" Arial, sans-serif;
+    background-color: #e0dddd;
     color: var(--green);
     line-height: 1.7;
-    color: --white;
+    color: var(---white);
+    margin:0;
+    padding:0;
 }
-h1 h2 h3 {
+h1 
+h2 
+h3 {
     font-family: 'Times New Roman', Times, serif;
 }
 a{
-    text-decoration: #d47231;
+    text-decoration:none;
+    color:var(--orange);
 }
 img{
     max-width: 100%;
@@ -34,19 +41,23 @@ img{
 }
 
 nav{
-    background-color: #C74040;
-    padding: 1rem;
+    background-color:var(--brown);
+    padding: 1rem 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top:0;
-    z-index: 999;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
    
 
 }
 .logo{
-    font-family: Play 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:
+     Play 'Franklin Gothic Medium',
+      'Arial Narrow', Arial,
+       sans-serif;
     font-size: 1.8rem;
     color:var(--light-brown);
     letter-spacing: 1px;
@@ -64,31 +75,29 @@ nav{
   font-weight: 400;
   padding: 6px 0;
   border-bottom: 2px solid transparent;
-  transition: color 0.3s, border-color 0.3s;
+  transition: 
+  color 0.3s, 
+  border-color 0.3s;
 }
 
 .nav-link a:hover{
     border-bottom-color:var(--light-brown) ;
 }
 #hero{
-    background: rgb(236, 151, 102);
+    background: #e9771b;
     padding: 120px 40px;
     text-align: center;
     color:var(--white);
     position:relative;
     overflow: hidden;
 }
-#hero::before{
-    content: '';
-    position: absolute;
-    inset: 0;
 
-}
 #hero h1{
     font-size: 4rem;
     letter-spacing: 2px;
     margin-bottom: 16px;
-    position:relative;
+    position: relative;
+    font-weight: 700;
 }
 #hero h3{
     font-size: 1.4rem;
@@ -103,7 +112,6 @@ nav{
     padding: 100px 40px;
     text-align: center;
     color:var(--white);
-
 }
 #intro h1{
     font-size: 3rem;
@@ -123,60 +131,70 @@ nav{
 }
 #objective h1{
     font-size: 3rem;
-    margin: bottom 14px; 
-
-
+    margin-bottom: 14px; 
 }
 #objective p{
     font-size: 1.15rem;
     opacity: 0.88;
+    max-width: 600px;
     max-width: 0 auto;
 }
-#Problem h1{
-    padding: 70px 60px;
-    background: var(--cream);
+.problem {
+    padding: 2rem;
+    padding-bottom: 3rem;
     text-align: center;
+    background: var(---white);
 }
-#Problem h2{
+.problem h1{
     font-size: 2rem;
-    color: var(--brown);
+    color: var(--green);
     margin-bottom: 14px;
+    font-weight: 700;
 }
-#Problem p{
-    font-size: 1.1rem;
+.problem p{
+    font-size: 1.25rem;
+    margin:0 auto;
+    color: var(--brown);
     max-width: 600px;
-    margin: 0 auto;
-    color:#b3581b;
+
+}
+
+.how-it-works h1{
+    text-align: center;
+    color: var(--green);
 
 }
 #steps,
-#how-it-works h2{
+.how-it-works h2{
+    text-align:center ;
+    font-size: 2.2rem;
+    color:var(--brown);
+    margin-bottom: 10px;
+}
+.step > p,
+.how-it-works > p {
     text-align: center;
     font-size: 2.2rem;
     color: var(--brown);
     margin-bottom: 10px;
-
-}
-#steps > p,how it works>p{
-    text-align:center ;
-    font-size: 1.05rem;
-    color: #e9771b;
-    margin-bottom: 50px;
-}
-.step{
+   }
+   .step{
     background: var(--cream);
     border-left: 5px solid var(--orange);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 28px 32px;
     margin-bottom: 24px;
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 12px rgba(236,147,30,0.1);
+    transition: 
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 .step:hover{
     transform: translateX(6px);
+    box-shadow: 0 6px 16px rgba(236, 147, 30, 0.15);
 }
 .step-number{
     display: inline-block;
@@ -191,16 +209,16 @@ nav{
 }
 .step h3{
     font-size: 1.3rem;
-    color: var(--brown);
+    color: var(--white);
     margin-bottom: 8px;
 
 }
 .step p {
-    color:#e08121;
+    color:var(---white);
     font-size: 1rem;
 }
 #goals{
-    background: var(--dark-orange);
+    background: linear-gradient(135deg, var(--Orange), var(--brown));
     padding: 80px 70px;
     text-align: center;
     color: var(-white);
@@ -208,7 +226,7 @@ nav{
 #goals h2{
     font-size: 2.2rem;
     margin-bottom: 40px;
-    color:var(---light-brown);
+    color:var(--green);
 }
 #goals ul{
     list-style:none;
@@ -223,22 +241,20 @@ nav{
     border-radius: 10px;
     padding: 20px 30px;
     min-width: 200px;
-    transition: background 0.3s;
+    transition:
+        background 0.3s,
+        transform 0.2s ;
 }
 
-#goals ul fieldset{
-    border:2px solid var(--orange);
-    border-radius: 10px;
-    padding:20px 30px;
-    min-width: 200px;
-    transition: background 0.3s;
+#goals ul fieldset:hover {
+    border:rgba(236, 147, 30, 0.1);
+    transform: translateY(-3px);
 }
 #goals ul li{
-    color: var(--cream-light);
+    color: var(--white);
     font-size: 1.05rem;
     font-weight: 700;
 }
-#SDG-Alignment,
 #SDG-Alignment{
     padding: 70px 60px;
     background:var(--cream);
@@ -257,14 +273,17 @@ nav{
 }
 #food-sources h2{
     font-size: 2.2rem;
-    color: var(---light-brown);
-    margin: brownm 14px; 
+    color: var(--brown);
+    margin-bottom: 14px; 
+    text-align: center;
+
 
 }
 #food-sources>p{
     color:#cc7a28;
     margin-bottom: 40px;
     font-size: 1.05rem;
+    text-align: center;
 }
 .source-grid{
     display: grid;
@@ -277,15 +296,18 @@ nav{
     background: var(---white);
     border-radius: 12px;
     padding: 32px 24px;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.88);
     border-top: 4px solid var(--orange);
-    transition:transform 0.3s;
+    transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 .source-card:hover{
-    transform: translateY(-6px);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 .source-card h3{
-    color: var(--cream);
+    color: var(--brown);
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
@@ -299,14 +321,20 @@ nav{
  text-align: center;
  color: var(--white);
 }
-#cta p{
+#cta h2{
     font-size: 2.4rem;
     margin-bottom: 14px;
 }
+#cta h3{
+    font-size: 2.4rem;
+    color: var(--brown);
+}
+
 #cta p{
     font-size: 1.1rem;
     opacity: 0.9;
     margin-bottom: 32px;
+    color: var(--brown);
 }
 .cta-buttons{
     display: flex;
@@ -314,59 +342,89 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
 }
-.btn{
-    background: var(--white);
-    color: var(--orange);
+button{
+    background: var(---green);
+    color: var(---white);
     padding: 14px 32px;
-    font-weight:  700;
+    font-weight: 700;
     font-size: 1rem;
-    display:inline-block;
-    transition: background 0.3 ,color 0.3s,transform  0.2s;
+    border-radius: 300px;
+    display: inline-block;
+    transition: 
+    background 0.3s,
+    color 0.3s,
+    transform 0.25s;
     border: 2px solid var(---white);
-} 
-.btn-outline {
-    background: transparent;
+    &:hover{
+        background:var(--orange);
+        color: var(--white);
+        transform: translateY(-3px);
+    }
+}
+.btn-{
+    background: var(---green);
+    color: var(---white);
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 1em ;
+    border-radius: 30px;
+    display: inline-block;
+    transition:
+    background 0.3s,
+    color 0.3s,
+    transform 0.2s;
+    border: 2px solid var(--white);
+}
+.btn:hover{
+    background: var(--orange);
+    color:var(--white);
+    transform:translateY(-3px);
+
+}
+.btn-outline{
+    background: var(---green);
     color: var(---white);
     padding: 14px 32px;
     border-radius: 30px;
     font-weight: 700;
-    font-size: 1em ;
+    font-size: 1em;
     display: inline-block;
-    border: 2px solid var(--white);
-    transition:background 0.3s,color 0.3s,transform 0.2s;
+    border: 2px solid var(---white);
+    transition: 
+    background 0.3s,
+    color 0.3s,
+    transform 0.2s;
 }
-.btn-outline:hover{
-    background: var(--white);
+.btn-outline:hover {
+    background: var(--brickred);
     color:var(--orange);
-    transform:translateY(-3px);
-
+    transform: translateY();
 }
+
 #abt{
     padding: 70px 60px;
     background: var(---white);
     text-align: center;
 }
 #abt h4{
-    color: var(--orange);
-    font-size: 0.95rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+   color: var(---orange);
+   font-size: 0.95rem;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
 }
-#abt h1{
+#abt h1 {
     font-size: 2.5rem;
     color:var(--brown);
     margin-bottom: 20px;
 }
-#abt p{
-    max-width: 700px;
-    margin: 0 auto 20px;
-}
+
 #abt p{
     max-width: 700px;
     margin:0 auto 20px;
-    color: #e07c18;
+    color:var(--brown);
     font-size: 1.05rem;
+    line-height: 1.8;
 }
 .stat-box{
     background:var(--cream);
@@ -381,8 +439,11 @@ nav{
     color:var(--brown);
     font-size: 1.6rem;
 }
+    #step h2{
+        color: var(--brown);
+    }
+
 fieldset{
-   fieldset {
  border: 2px solid var(--light-brown);
  border-radius: 10px;
  padding: 24px 32px;
@@ -401,20 +462,22 @@ fieldset h6{
     margin-top: 10px;
 }
 .box{
-    display: inline-block;
-    background:var(--orange);
-    color:var(--white);
-    border-radius: 10px;
-    padding:20px 36px;
-    margin:12px;
-    cursor: pointer;
-    transition:background 0.3s,transform 0.2s;
-    box-shadow: var(--shadow);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    gap:2rem;
+
+    button{
+        padding: 1.15rem;
+        font-size: 1rem;
+        border-radius: 40px;
+        border: none;
+        background-color: var(---green);
+        color: var(---white);
+    } 
 }
-.box:hover{
-    background:var(--dark-orange);
-    transform:translateY(-4px);
-}
+
 .box h2{
     color:var(--white);
     font-size: 1.3rem;
@@ -478,32 +541,32 @@ from button[type="submit"] {
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background 0.3s,transform 0.2s;
+    transition:
+     background 0.3s,
+     transform 0.2s;
     font-family: 'Times New Roman', Times, serif;
 }
 from button[type="submit"]:hover{
-    background:var(--dark-orange);
+    background:var(--brown);
     transform: translateY(-3px);
 }
 #process{
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) ;
-
-gap:20px;
-max-width: 30px auto 0;
+    gap:20px;
+    max-width: width 900px;
+    margin: 0 auto ;
 }
 #process h3{
     color:var(--light-brown);
     margin-bottom: 6px;
     font-size: 1.1rem;
+    }
     #process p{
-        color:rgba(255,255,255,0.75);
-        font-size: 1.1rem;
+        color:#fff;
+        font-size: 0.95rem;
     }
-    #process p {
-     color: rgba(255,255,255,0.75);
-     font-size: 0.95rem;
-    }
+   
     footer{
         background: var(--green);
         color: #c9a97a;
@@ -516,11 +579,14 @@ max-width: 30px auto 0;
         animation:fade In 1s ease forwards;
     }
     @keyframes fadeIn{
-        from { opacity:0;transform: translate(30px);
+        from { 
+            opacity:0;
+            transform: translateY(30px);
 
         }
         to{
-            opacity:1 ; transform: translateY(0);
+            opacity:1 ; 
+            transform: translateY(0);
         }
     }
     @media (max-width: 768px){
@@ -533,8 +599,12 @@ max-width: 30px auto 0;
             gap: 12px;
             justify-content: center;
         }
-        #hero h1 {font-size: 2.6rem;}
-        intro h1 { font-size: 2.2rem;}
+        #hero h1 {
+            font-size: 2.6rem;
+        }
+        intro h1 { 
+            font-size: 2.2rem;
+        }
         #setps,
         #food-sources,
         #goals,
@@ -548,5 +618,3 @@ max-width: 30px auto 0;
             padding:28px 20px;
         }
     }
-}
-} 
