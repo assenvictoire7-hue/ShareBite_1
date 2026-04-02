@@ -158,10 +158,6 @@ nav{
 
 }
 
-.how-it-works h1{
-    text-align: center;
-    color: var(--green);
-
 .how-it-works h1 {
   text-align: center;
   color: var(--green);
@@ -173,7 +169,7 @@ nav{
     color:var(--brown);
     margin-bottom: 10px;
 }
-.step > p,
+#step > p,
 .how-it-works > p {
     text-align: center;
     font-size: 2.2rem;
@@ -558,61 +554,60 @@ from button[type="submit"]:hover{
     color:var(--light-brown);
     margin-bottom: 6px;
     font-size: 1.1rem;
-    }
-    #process p{
-        color:#fff;
-        font-size: 0.95rem;
-    }
-   
-    footer{
-        background: var(--green);
-        color: #c9a97a;
-        text-align: center;
-        padding:30px 20px;
-        font-size: 0.95rem;
-        letter-spacing: 0.5px;
-    }
-    .animate{
-        animation:fade In 1s ease forwards;
-    }
-    @keyframes fadeIn{
-        from { 
-            opacity:0;
-            transform: translateY(30px);
+}
+#process p{
+    color:#fff;
+    font-size: 0.95rem;
+}
 
-        }
-        to{
-            opacity:1 ; 
-            transform: translateY(0);
-        }
-    }
-    @media (max-width: 768px){
-        nav{
-            flex-direction: column;
-            gap: 14px;
-            padding: 16px 20px;
-        }
-        .nav-links{
-            gap: 12px;
-            justify-content: center;
-        }
-        #hero h1 {
-            font-size: 2.6rem;
-        }
-        intro h1 { 
-            font-size: 2.2rem;
-        }
-        #setps,
-        #food-sources,
-        #goals,
-        #Problem
-        #cta {
-            padding: 50px 24px;
+footer{
+    background: var(--green);
+    color: #c9a97a;
+    text-align: center;
+    padding:30px 20px;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+.animate{
+    animation:fade In 1s ease forwards;
+}
+@keyframes fadeIn{
+    from { 
+        opacity:0;
+        transform: translateY(30px);
 
-        }
-        form{
-            margin: 30px 20px;
-            padding:28px 20px;
-        }
+    }
+    to{
+        opacity:1 ; 
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        gap: 14px;
+        padding: 16px 20px;
+    }
+    .nav-links{
+        gap: 12px;
+        justify-content: center;
+    }
+    #hero h1 {
+        font-size: 2.6rem;
+    }
+    intro h1 { 
+        font-size: 2.2rem;
+    }
+    #setps,
+    #food-sources,
+    #goals,
+    #Problem
+    #cta {
+        padding: 50px 24px;
+
+    }
+    form{
+        margin: 30px 20px;
+        padding:28px 20px;
     }
 }
