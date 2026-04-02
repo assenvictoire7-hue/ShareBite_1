@@ -34,10 +34,9 @@ a{
     text-decoration:none;
     color:var(--orange);
 }
-img{
-    max-width: 100%;
-    display:block;
-
+img {
+  max-width: 100%;
+  display: block;
 }
 
 nav{
@@ -62,11 +61,11 @@ nav{
     color:var(--light-brown);
     letter-spacing: 1px;
 }
-.nav-link{
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .nav-link a {
@@ -80,8 +79,8 @@ nav{
   border-color 0.3s;
 }
 
-.nav-link a:hover{
-    border-bottom-color:var(--light-brown) ;
+.nav-link a:hover {
+  border-bottom-color: var(--light-brown);
 }
 #hero{
     background: #e9771b;
@@ -99,13 +98,13 @@ nav{
     position: relative;
     font-weight: 700;
 }
-#hero h3{
-    font-size: 1.4rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 300;
-    font-style: Time new roman;
-    opacity: 0.9;
-    position: relative;
+#hero h3 {
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+  font-style: Time new roman;
+  opacity: 0.9;
+  position: relative;
 }
 #intro{
     background:linear-gradient(135deg,var(--brown) 0%, #eb6b0f 100%);
@@ -113,21 +112,21 @@ nav{
     text-align: center;
     color:var(--white);
 }
-#intro h1{
-    font-size: 3rem;
-    margin-bottom: 14px;
+#intro h1 {
+  font-size: 3rem;
+  margin-bottom: 14px;
 }
-#intro p{
-    font-size: 1.15rem;
-    opacity: 0.88;
-    max-width: 600px;
-    margin: 0 auto 24px;
+#intro p {
+  font-size: 1.25rem;
+  opacity: 0.88;
+  max-width: 600px;
+  margin: 0 auto 24px;
 }
-#objective{
-    background:linear-gradient(135deg,#ee6b0d 0%, var(--brown) 100%);
-    padding: 100px 40px;
-    text-align: center;
-    color: var(--white);
+#objective {
+  background: linear-gradient(135deg, #ee6b0d 0%, var(--brown) 100%);
+  padding: 100px 40px;
+  text-align: center;
+  color: var(--white);
 }
 #objective h1{
     font-size: 3rem;
@@ -163,6 +162,9 @@ nav{
     text-align: center;
     color: var(--green);
 
+.how-it-works h1 {
+  text-align: center;
+  color: var(--green);
 }
 #steps,
 .how-it-works h2{
@@ -196,16 +198,16 @@ nav{
     transform: translateX(6px);
     box-shadow: 0 6px 16px rgba(236, 147, 30, 0.15);
 }
-.step-number{
-    display: inline-block;
-    background-color: var(--orange);
-    color: var(--white);
-    font-weight: 700;
-    font-size: 1,1rem;
-    padding: 6px 14px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    font-family: 'Playfair Display', serif;
+.step-number {
+  display: inline-block;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
 }
 .step h3{
     font-size: 1.3rem;
@@ -228,13 +230,12 @@ nav{
     margin-bottom: 40px;
     color:var(--green);
 }
-#goals ul{
-    list-style:none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-
+#goals ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 #goals ul fieldset{
     border: 2px solid var(--orange);
@@ -260,16 +261,14 @@ nav{
     background:var(--cream);
     text-align: center;
 }
-#SDG-Alignment div{
-    display: inline-block;
-    background: var(---green);
-    color:var(--white);
-    color:var(---white);
-    border-radius: 8px;
-    padding: 14px 28px; 
-    margin: 10px;
-    font-size: 1.1rem;
-
+#SDG-Alignment div {
+  display: inline-block;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 1.1rem;
 }
 #food-sources h2{
     font-size: 2.2rem;
@@ -285,12 +284,12 @@ nav{
     font-size: 1.05rem;
     text-align: center;
 }
-.source-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-    gap:24px;
-    max-width: 900px;
-    margin:0 auto;
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .source-card{
     background: var(---white);
@@ -311,15 +310,15 @@ nav{
     margin-bottom: 10px;
     font-size: 1.3rem;
 }
-.source-card p{
-    color: #915010;
-    font-size: 0.98rem;
+.source-card p {
+  color: #915010;
+  font-size: 0.98rem;
 }
 #cta {
- background: linear-gradient(135deg, var(--orange) 0%, var(--dark-orange) 100%);
- padding: 80px 40px;
- text-align: center;
- color: var(--white);
+  background: linear-gradient(135deg, var(--orange) 0%, var(--brown) 100%);
+  padding: 80px 40px;
+  text-align: center;
+  color: var(--white);
 }
 #cta h2{
     font-size: 2.4rem;
@@ -346,6 +345,7 @@ button{
     background: var(---green);
     color: var(---white);
     padding: 14px 32px;
+    font-weight: 700;
     font-weight: 700;
     font-size: 1rem;
     border-radius: 300px;
@@ -426,18 +426,18 @@ button{
     font-size: 1.05rem;
     line-height: 1.8;
 }
-.stat-box{
-    background:var(--cream);
-    border: left 5px solid var(--orange);
-    border-radius: 8px;
-    padding: 24px 32px;
-    max-width: 600px;
-    margin: 30px auto;
-    box-shadow: var(--shadow);
+.stat-box {
+  background: var(--cream);
+  border-left: 5px solid var(--orange);
+  border-radius: 8px;
+  padding: 24px 32px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: var(--shadow);
 }
-.stat-box h2{
-    color:var(--brown);
-    font-size: 1.6rem;
+.stat-box h2 {
+  color: var(--brown);
+  font-size: 1.6rem;
 }
     #step h2{
         color: var(--brown);
@@ -452,14 +452,13 @@ fieldset{
  background: var(--cream);
 
 }
-fieldset p{
-    color: #5a3a1a;
-
+fieldset p {
+  color: #5a3a1a;
 }
-fieldset h6{
-    color:var(--orange);
-    font-style: italic;
-    margin-top: 10px;
+fieldset h6 {
+  color: var(--orange);
+  font-style: italic;
+  margin-top: 10px;
 }
 .box{
     display: flex;
@@ -482,53 +481,51 @@ fieldset h6{
     color:var(--white);
     font-size: 1.3rem;
 }
-#beneficiaries-list{
-    padding: 70px 60px;
-    background:var(--white);
-    max-width: 850px;
-    margin:0 auto;
-
+#beneficiaries-list {
+  padding: 70px 60px;
+  background: var(--white);
+  max-width: 850px;
+  margin: 0 auto;
 }
-form{
-    max-width: 600px;
-    margin: 50px auto;
-    background:var(--white);
-    padding:40px;
-    border-radius: 14px;
-    box-shadow:var(--shadow);
 
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
 }
-from label{
-    display: block;
-    font: weight 700;
-    color: var(--brown);
-    margin-bottom: 6px;
-    margin-top: 20px;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+form label {
+  display: block;
+  font-weight: 700;
+  color: var(--brown);
+  margin-bottom: 6px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 form input,
-form textarea{
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e0c9a8;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-family: 'Lato',sans-serif;
-    background: var(--cream);
-    color: var(--dark-orange);
-    transition: border-color 0.3s;
+form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0c9a8;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+  transition: border-color 0.3s;
 }
-from input:focus,
-from textarea:focus{
-    outline:none;
-    border-color: var(--orange);
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--orange);
 }
-from texterea{
-    height:130px;
-    resize:vertical;
-
+form textarea {
+  height: 130px;
+  resize: vertical;
 }
 from button[type="submit"] {
     margin-top: 28px;
@@ -618,3 +615,4 @@ from button[type="submit"]:hover{
             padding:28px 20px;
         }
     }
+}
